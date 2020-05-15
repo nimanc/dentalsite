@@ -1,0 +1,59 @@
+
+{% load static %}
+
+{% block content %}
+
+
+<!-- Main Header Start -->
+<div class="main-header-area">
+    <div class="classy-nav-container breakpoint-off">
+    <div class="container">
+        <!-- Classy Menu -->
+        <nav class="classy-navbar justify-content-between" id="dentoNav">
+
+        <!-- Logo -->
+        <a class="nav-brand" href=" {% url 'home-page' %} "><img src=" {% static 'img/core-img/logo.png' %} " alt=""></a>
+
+        <!-- Navbar Toggler -->
+        <div class="classy-navbar-toggler">
+            <span class="navbarToggler"><span></span><span></span><span></span></span>
+        </div>
+
+        <!-- Menu -->
+        <div class="classy-menu">
+
+            <!-- Close Button -->
+            <div class="classycloseIcon">
+            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+            </div>
+
+            <!-- Nav Start -->
+            <div class="classynav">
+            <ul id="nav">
+                <li><a href=" {% url 'home-page' %} ">Home</a></li>
+                <li><a href=" {% url 'about-page' %} ">About</a></li>
+                <li><a href=" {% url 'service-page' %} ">Service</a></li>
+                <li><a href=" {% url 'pricing-page' %} ">Pricing</a></li>
+                <li><a href="#">Blog</a>
+                <ul class="dropdown">
+                    <li><a href=" {% static 'blog.html' %} ">- Blog</a></li>
+                    <li><a href=" {% static 'blog-details.html' %} ">- Blog Details</a></li>
+                </ul>
+                </li>
+                <li><a href=" {% url 'contact-page' %} ">Contact</a></li>
+            </ul>
+            </div>
+            <!-- Nav End -->
+        </div>
+
+        <!-- Booking Now Button -->
+        <a href="#" class="btn dento-btn booking-btn">Booking Now</a>
+        </nav>
+    </div>
+    </div>
+</div>
+</header>
+<!-- ***** Header Area End ***** -->
+
+
+{% endblock content %}
